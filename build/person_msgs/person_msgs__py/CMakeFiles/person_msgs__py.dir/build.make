@@ -70,8 +70,11 @@ person_msgs__py/CMakeFiles/person_msgs__py: rosidl_generator_py/person_msgs/_per
 person_msgs__py/CMakeFiles/person_msgs__py: rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_introspection_c.c
 person_msgs__py/CMakeFiles/person_msgs__py: rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_c.c
 person_msgs__py/CMakeFiles/person_msgs__py: rosidl_generator_py/person_msgs/msg/_person.py
+person_msgs__py/CMakeFiles/person_msgs__py: rosidl_generator_py/person_msgs/srv/_query.py
 person_msgs__py/CMakeFiles/person_msgs__py: rosidl_generator_py/person_msgs/msg/__init__.py
+person_msgs__py/CMakeFiles/person_msgs__py: rosidl_generator_py/person_msgs/srv/__init__.py
 person_msgs__py/CMakeFiles/person_msgs__py: rosidl_generator_py/person_msgs/msg/_person_s.c
+person_msgs__py/CMakeFiles/person_msgs__py: rosidl_generator_py/person_msgs/srv/_query_s.c
 
 rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -87,6 +90,7 @@ rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.
 rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/person_msgs/msg/Person.idl
+rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/person_msgs/srv/Query.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yujiro22/ros2_ws/build/person_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/yujiro22/ros2_ws/build/person_msgs/person_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/yujiro22/ros2_ws/build/person_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -99,11 +103,20 @@ rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_c.c: rosidl
 rosidl_generator_py/person_msgs/msg/_person.py: rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/person_msgs/msg/_person.py
 
+rosidl_generator_py/person_msgs/srv/_query.py: rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/person_msgs/srv/_query.py
+
 rosidl_generator_py/person_msgs/msg/__init__.py: rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/person_msgs/msg/__init__.py
 
+rosidl_generator_py/person_msgs/srv/__init__.py: rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/person_msgs/srv/__init__.py
+
 rosidl_generator_py/person_msgs/msg/_person_s.c: rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/person_msgs/msg/_person_s.c
+
+rosidl_generator_py/person_msgs/srv/_query_s.c: rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/person_msgs/srv/_query_s.c
 
 person_msgs__py: person_msgs__py/CMakeFiles/person_msgs__py
 person_msgs__py: rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_c.c
@@ -112,6 +125,9 @@ person_msgs__py: rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesu
 person_msgs__py: rosidl_generator_py/person_msgs/msg/__init__.py
 person_msgs__py: rosidl_generator_py/person_msgs/msg/_person.py
 person_msgs__py: rosidl_generator_py/person_msgs/msg/_person_s.c
+person_msgs__py: rosidl_generator_py/person_msgs/srv/__init__.py
+person_msgs__py: rosidl_generator_py/person_msgs/srv/_query.py
+person_msgs__py: rosidl_generator_py/person_msgs/srv/_query_s.c
 person_msgs__py: person_msgs__py/CMakeFiles/person_msgs__py.dir/build.make
 .PHONY : person_msgs__py
 

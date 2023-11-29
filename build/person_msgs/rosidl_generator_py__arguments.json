@@ -3,7 +3,8 @@
   "output_dir": "/home/yujiro22/ros2_ws/build/person_msgs/rosidl_generator_py/person_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/yujiro22/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs:msg/Person.idl"
+    "/home/yujiro22/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs:msg/Person.idl",
+    "/home/yujiro22/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs:srv/Query.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -19,6 +20,7 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/yujiro22/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs/msg/Person.idl"
+    "/home/yujiro22/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs/msg/Person.idl",
+    "/home/yujiro22/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs/srv/Query.idl"
   ]
 }

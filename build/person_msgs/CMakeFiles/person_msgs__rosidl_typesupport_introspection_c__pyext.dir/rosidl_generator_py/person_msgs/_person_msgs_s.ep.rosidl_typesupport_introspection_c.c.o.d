@@ -206,4 +206,7 @@ CMakeFiles/person_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_gen
  /home/yujiro22/ros2_ws/build/person_msgs/rosidl_generator_c/person_msgs/msg/detail/person__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /home/yujiro22/ros2_ws/build/person_msgs/rosidl_generator_c/person_msgs/msg/detail/person__functions.h
+ /home/yujiro22/ros2_ws/build/person_msgs/rosidl_generator_c/person_msgs/msg/detail/person__functions.h \
+ /home/yujiro22/ros2_ws/build/person_msgs/rosidl_generator_c/person_msgs/srv/detail/query__type_support.h \
+ /home/yujiro22/ros2_ws/build/person_msgs/rosidl_generator_c/person_msgs/srv/detail/query__struct.h \
+ /home/yujiro22/ros2_ws/build/person_msgs/rosidl_generator_c/person_msgs/srv/detail/query__functions.h

@@ -67,6 +67,9 @@ include CMakeFiles/person_msgs.dir/compiler_depend.make
 include CMakeFiles/person_msgs.dir/progress.make
 
 CMakeFiles/person_msgs: /home/yujiro22/ros2_ws/src/person_msgs/msg/Person.msg
+CMakeFiles/person_msgs: /home/yujiro22/ros2_ws/src/person_msgs/srv/Query.srv
+CMakeFiles/person_msgs: rosidl_cmake/srv/Query_Request.msg
+CMakeFiles/person_msgs: rosidl_cmake/srv/Query_Response.msg
 
 person_msgs: CMakeFiles/person_msgs
 person_msgs: CMakeFiles/person_msgs.dir/build.make

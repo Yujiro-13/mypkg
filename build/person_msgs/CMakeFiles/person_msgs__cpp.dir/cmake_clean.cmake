@@ -4,6 +4,10 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/person_msgs/msg/detail/person__struct.hpp"
   "rosidl_generator_cpp/person_msgs/msg/detail/person__traits.hpp"
   "rosidl_generator_cpp/person_msgs/msg/person.hpp"
+  "rosidl_generator_cpp/person_msgs/srv/detail/query__builder.hpp"
+  "rosidl_generator_cpp/person_msgs/srv/detail/query__struct.hpp"
+  "rosidl_generator_cpp/person_msgs/srv/detail/query__traits.hpp"
+  "rosidl_generator_cpp/person_msgs/srv/query.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

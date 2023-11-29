@@ -1,0 +1,2 @@
+Invoking command in '/home/yujiro22/ros2_ws/build/person_msgs': /usr/bin/cmake --build /home/yujiro22/ros2_ws/build/person_msgs -- -j8 -l8
+Invoked command in '/home/yujiro22/ros2_ws/build/person_msgs' returned '2': /usr/bin/cmake --build /home/yujiro22/ros2_ws/build/person_msgs -- -j8 -l8

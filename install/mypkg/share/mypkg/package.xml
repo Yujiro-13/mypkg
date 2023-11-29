@@ -6,8 +6,9 @@
   <description>a package for practice</description>
   <maintainer email="s.yujiro613@gmal.com">yujiro22</maintainer>
   <license>BSD-3-Clause</license>
-  <exec_depend>rclpy</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>rclpy</exec_depend> <!-- 第8回パッケージ -->
+  <exec_depend>std_msgs</exec_depend> <!-- 第8回パッケージ -->
+
   <exec_depend>launch_ros</exec_depend>
 
   <test_depend>ament_copyright</test_depend>

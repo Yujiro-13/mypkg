@@ -1,18 +1,16 @@
 import rclpy
 from rclpy.node import Node
-from person_msgs.msg import Person #使う型を変更
+from person_msgs.srv import Query #使う型を変更
+
+def cb(request, response):
+    if request.name == "上田隆一":
+        response.age = 44
+    else:
+        response.age = 255
+ 
+    return response
 
 rclpy.init()
 node = Node("talker")
-pub = node.create_publisher(Person, "person", 10) #変更
-n = 0
-def cb():
-    global n
-    msg = Person()         #受信するデータの型を変更
-    msg.name = "市東勇士朗"  #msgファイルに書いた「name」
-    msg.age = n            #msgファイルに書いた「age」
-    pub.publish(msg)
-    n += 1
-  
-node.create_timer(0.5, cb)
+srv = node.create_service(Query, "query", cb) #サービスの作成
 rclpy.spin(node)

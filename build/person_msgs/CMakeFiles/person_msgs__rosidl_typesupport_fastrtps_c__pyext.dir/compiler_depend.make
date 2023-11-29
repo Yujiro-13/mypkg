@@ -247,8 +247,13 @@ CMakeFiles/person_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generato
   rosidl_generator_c/person_msgs/msg/detail/person__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
-  rosidl_generator_c/person_msgs/msg/detail/person__functions.h
+  rosidl_generator_c/person_msgs/msg/detail/person__functions.h \
+  rosidl_generator_c/person_msgs/srv/detail/query__type_support.h \
+  rosidl_generator_c/person_msgs/srv/detail/query__struct.h \
+  rosidl_generator_c/person_msgs/srv/detail/query__functions.h
 
+
+rosidl_generator_c/person_msgs/srv/detail/query__functions.h:
 
 rosidl_generator_c/person_msgs/msg/detail/person__functions.h:
 
@@ -263,6 +268,8 @@ rosidl_generator_c/person_msgs/msg/detail/person__struct.h:
 /usr/include/python3.10/eval.h:
 
 /usr/include/python3.10/cpython/import.h:
+
+rosidl_generator_c/person_msgs/srv/detail/query__struct.h:
 
 /usr/include/python3.10/import.h:
 
@@ -531,6 +538,8 @@ rosidl_generator_py/person_msgs/_person_msgs_s.ep.rosidl_typesupport_fastrtps_c.
 /usr/include/python3.10/typeslots.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+rosidl_generator_c/person_msgs/srv/detail/query__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 

@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2023 Yujiro Shito
+# SPDX-License-Identifier: BSD-3-Clause
+
 import launch
 import launch.actions
 import launch.substitutions

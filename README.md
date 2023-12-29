@@ -21,14 +21,20 @@
 
 ### トピック内容
 
+
 ### ノードの使用方法
 - talker.py
+数字をカウントしてトピック/countupを通じて送信するノードです。
+
 以下のコマンドで起動します。
 ```
-$ ros2 run mypkg talker
+$ ros2 run mypkg talker #何も表示されない
 ```
+
 - listener.py
-以下のコマンドで起動します。
+
+
+talker.pyを起動したターミナルと別ターミナルを開き、以下のコマンドで起動します。
 ```
 $ ros2 run mypkg listener
 [INFO] [1703314540.253223410] [listener]: Listen: 0
@@ -36,11 +42,13 @@ $ ros2 run mypkg listener
 [INFO] [1703314541.231645432] [listener]: Listen: 2
 ・・・
 ```
+
 - talk_listen.launch.py
-以下のコマンドで起動します。
-$ ros2 launch mypkg talk_listen.launch.py 
+talker.py、listener.pyを同じターミナルで起動するためのノードです。
+
+以下のコマンドで起動します。 
 ```
-[INFO] [launch]: All log files can be found below /home/yujiro22/.ros/log/2023-12-29-16-35-14-772339-yujiro-s-29540
+$ ros2 launch mypkg talk_listen.launch.py
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [talker-1]: process started with pid [29541]
 [INFO] [listener-2]: process started with pid [29543]

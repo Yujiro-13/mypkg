@@ -23,8 +23,30 @@
 
 ### ノードの使用方法
 - talker.py
+以下のコマンドで起動します。
+```
+$ ros2 run mypkg talker
+```
 - listener.py
+以下のコマンドで起動します。
+```
+$ ros2 run mypkg listener
+[INFO] [1703314540.253223410] [listener]: Listen: 0
+[INFO] [1703314540.732753899] [listener]: Listen: 1
+[INFO] [1703314541.231645432] [listener]: Listen: 2
+・・・
+```
 - talk_listen.launch.py
+以下のコマンドで起動します。
+```
+[INFO] [launch]: All log files can be found below /home/yujiro22/.ros/log/2023-12-29-16-35-14-772339-yujiro-s-29540
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [29541]
+[INFO] [listener-2]: process started with pid [29543]
+[listener-2] [INFO] [1703835315.633143352] [listener]: Listen: 0
+[listener-2] [INFO] [1703835316.124830784] [listener]: Listen: 1
+[listener-2] [INFO] [1703835316.624943984] [listener]: Listen: 2
+```
 
 ## 著作権・ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．

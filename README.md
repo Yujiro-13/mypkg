@@ -20,11 +20,12 @@
   - 講義第9回の内容を分けたブランチです。
 
 ### トピック内容
-
+本パッケージでは、16ビット符号付き整数のメッセージ型を持つトピック/countupを扱います。
 
 ### ノードの使用方法
 - talker.py
-数字をカウントしてトピック/countupを通じて送信するノードです。
+
+0.5秒毎にカウントした数字を、トピック/countupを通じて送信するノードです。
 
 以下のコマンドで起動します。
 ```
@@ -33,8 +34,9 @@ $ ros2 run mypkg talker #何も表示されない
 
 - listener.py
 
+トピック/countupを受信して端末に表示するノードです。
 
-talker.pyを起動したターミナルと別ターミナルを開き、以下のコマンドで起動します。
+talker.pyを起動した端末と別端末を開き、以下のコマンドで起動します。
 ```
 $ ros2 run mypkg listener
 [INFO] [1703314540.253223410] [listener]: Listen: 0
@@ -44,7 +46,7 @@ $ ros2 run mypkg listener
 ```
 
 - talk_listen.launch.py
-talker.py、listener.pyを同じターミナルで起動するためのノードです。
+talker.py、listener.pyを同じ端末で起動するためのノードです。
 
 以下のコマンドで起動します。 
 ```

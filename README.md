@@ -38,6 +38,7 @@ $ ros2 run mypkg listener
 ```
 - talk_listen.launch.py
 以下のコマンドで起動します。
+$ ros2 launch mypkg talk_listen.launch.py 
 ```
 [INFO] [launch]: All log files can be found below /home/yujiro22/.ros/log/2023-12-29-16-35-14-772339-yujiro-s-29540
 [INFO] [launch]: Default logging verbosity is set to INFO

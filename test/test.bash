@@ -10,33 +10,26 @@ colcon build
 source $dir/.bashrc
 timeout 10 ros2 launch mypkg datetime.launch.py > /tmp/mypkg.log &
 
-# Sleep for a short time to allow nodes to start
+# 少し待機
 sleep 2
 
-# Get PID of the ROS2 launch process
-launch_pid=$!
+ret=0
 
-# Run tests
-result=0
-
-# Check if publisher is publishing
+# publisherがトピックを発行しているか確認
 if ros2 topic list | grep -q '/unix_time'; then
-    echo "Publisher is publishing"
+    echo "OK"
 else
-    echo "Publisher is not publishing"
-    result=1
+    echo "NG"
+    ret=1
 fi
 
-# Check if subscriber is receiving messages
+# subscriberがトピックを受信しているか確認
 if cat /tmp/mypkg.log | grep -q 'Date time'; then
-    echo "Subscriber is receiving messages"
+    echo "OK"
 else
-    echo "Subscriber is not receiving messages"
-    result=1
+    echo "OK"
+    ret=1
 fi
 
-# Stop the ROS2 launch process
-kill $launch_pid
-
-# Return result
-exit $result
+[ "$ret" = 0 ] && echo OK
+exit $ret

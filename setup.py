@@ -25,6 +25,9 @@ setup(
         'console_scripts': [
             'talker = mypkg.talker:main',
             'listener = mypkg.listener:main',
+            'pub_unix_time = mypkg.pub_unix_time:main',
+            'sub_unix_time = mypkg.sub_unix_time:main',
+            'pub_current_time = mypkg.pub_current_time:main',
         ],
     },
 )

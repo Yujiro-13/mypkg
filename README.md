@@ -10,53 +10,56 @@
 - ROS 2: Humble
 
 ## リポジトリの内容
-このリポジトリは、講義内容によってブランチを分けています。
+このリポジトリは、講義内容によってブランチを分けています。それぞれのパッケージの使用方法は、各ブランチ内のREADMEを読んでください。
 
 ### ブランチ内容
 - main
-  - 講義第9回を除く、第11回までの内容を含んでいます。
+  - 課題２にあたって作成したUnix時間をトピックとして扱うパッケージです。
+
+- lesson-11
+  - 講義第9回を除く、第11回までの内容を含むブランチです。
 
 - lesson-9
   - 講義第9回の内容を分けたブランチです。
 
 ### トピック内容
-本パッケージでは、16ビット符号付き整数のメッセージ型を持つトピック/countupを扱います。
+本パッケージでは、64ビット符号付き整数のメッセージ型を持つトピック/unix_timeを扱います。
 
 ### ノードの使用方法
-- talker.py
+- pub_unix_time.py
 
-0.5秒毎にカウントした数字を、トピック/countupを通じて送信するノードです。
+1秒毎のUnix時間を、トピック/unix_timeを通じて送信するノードです。
 
 以下のコマンドで起動します。
 ```
-$ ros2 run mypkg talker #何も表示されない
+$ ros2 run mypkg pub_unix_time.py #何も表示されない
 ```
 
-- listener.py
+- sub_unix_time.py
 
-トピック/countupを受信して端末に表示するノードです。
+トピック/unix_timeを受信して、受信したUnix時間とUnix時間を日時に変換した内容を端末に表示するノードです。
 
-talker.pyを起動した端末と別端末を開き、以下のコマンドで起動します。
+pub_unix_time.pyを起動した端末と別端末を開き、以下のコマンドで起動します。
 ```
-$ ros2 run mypkg listener
-[INFO] [1703314540.253223410] [listener]: Listen: 0
-[INFO] [1703314540.732753899] [listener]: Listen: 1
-[INFO] [1703314541.231645432] [listener]: Listen: 2
+$ ros2 run mypkg sub_unix_time.py
+[INFO] [1703979324.976998715] [sub_unix_time]: Unix time: 1703979324, Date time: 2023-12-31 08:35:24+09:00
+[INFO] [1703979325.959554845] [sub_unix_time]: Unix time: 1703979325, Date time: 2023-12-31 08:35:25+09:00
+[INFO] [1703979326.959363177] [sub_unix_time]: Unix time: 1703979326, Date time: 2023-12-31 08:35:26+09:00
 ・・・
 ```
 
-- talk_listen.launch.py
-talker.py、listener.pyを同じ端末で起動するためのノードです。
+- datetime.launch.py
+pub_unix_time.py, sub_unix_time.pyを同じ端末で起動するためのノードです。
 
 以下のコマンドで起動します。 
 ```
-$ ros2 launch mypkg talk_listen.launch.py
+$ ros2 launch mypkg datetime.launch.py
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [talker-1]: process started with pid [29541]
-[INFO] [listener-2]: process started with pid [29543]
-[listener-2] [INFO] [1703835315.633143352] [listener]: Listen: 0
-[listener-2] [INFO] [1703835316.124830784] [listener]: Listen: 1
-[listener-2] [INFO] [1703835316.624943984] [listener]: Listen: 2
+[INFO] [sub_unix_time-1]: process started with pid [19725]
+[INFO] [pub_unix_time-2]: process started with pid [19727]
+[sub_unix_time-1] [INFO] [1703979387.984456956] [sub_unix_time]: Unix time: 1703979387, Date time: 2023-12-31 08:36:27+09:00
+[sub_unix_time-1] [INFO] [1703979388.742199070] [sub_unix_time]: Unix time: 1703979388, Date time: 2023-12-31 08:36:28+09:00
+[sub_unix_time-1] [INFO] [1703979388.958912025] [sub_unix_time]: Unix time: 1703979388, Date time: 2023-12-31 08:36:28+09:00
 ```
 
 ## 著作権・ライセンス

@@ -9,7 +9,7 @@ import time
 class Talker():
     def __init__(self, node):
         self.pub = node.create_publisher(Int64, "unix_time", 10)
-        node.create_timer(1.0, self.cb)  # タイマーを1秒に変更
+        node.create_timer(1.0, self.cb)
 
     def cb(self):
         msg = Int64()

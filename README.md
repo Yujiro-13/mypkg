@@ -42,9 +42,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [talker-1]: process started with pid [29541]
 [INFO] [listener-2]: process started with pid [29543]
-[listener-2] [INFO] [1703835315.633143352] [listener]: Listen: 0
-[listener-2] [INFO] [1703835316.124830784] [listener]: Listen: 1
-[listener-2] [INFO] [1703835316.624943984] [listener]: Listen: 2
+[listener-2] [INFO] [1703835316.624943984] [listener]: age: 20
 ```
 
 ## 著作権・ライセンス

@@ -15,7 +15,7 @@
 ### ノードの使用方法
 - talker.py
 
-Query型のメッセージを、トピック/personを通じて送信するノードです。
+Query型のメッセージを、トピック/queryを通じて送信するノードです。
 
 以下のコマンドで起動します。
 ```
@@ -29,9 +29,7 @@ $ ros2 run mypkg talker #何も表示されない
 talker.pyを起動した端末と別端末を開き、以下のコマンドで起動します。
 ```
 $ ros2 run mypkg listener
-[INFO] [1703314540.253223410] [listener]: Listen: 0
-[INFO] [1703314540.732753899] [listener]: Listen: 1
-[INFO] [1703314541.231645432] [listener]: Listen: 2
+[INFO] [1703340715.167159511] [listener]: age: 20
 ・・・
 ```
 

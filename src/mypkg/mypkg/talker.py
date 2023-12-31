@@ -3,8 +3,8 @@ from rclpy.node import Node
 from person_msgs.srv import Query #使う型を変更
 
 def cb(request, response):
-    if request.name == "上田隆一":
-        response.age = 44
+    if request.name == "市東勇士朗":
+        response.age = 20
     else:
         response.age = 255
  

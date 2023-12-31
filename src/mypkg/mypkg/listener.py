@@ -10,7 +10,7 @@ def main():
          node.get_logger().info('待機中')
 
     req = Query.Request()
-    req.name = "上田隆一"
+    req.name = "市東勇士朗"
     future = client.call_async(req) #非同期でサービスを呼び出し
     while rclpy.ok():
         rclpy.spin_once(node) #一回だけサービスを呼び出したら終わり

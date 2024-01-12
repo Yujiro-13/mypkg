@@ -36,6 +36,7 @@ $ ros2 run mypkg sub_unix_time.py
 ```
 
 - datetime.launch.py
+
 pub_unix_time.py, sub_unix_time.pyを同じ端末で起動するためのノードです。
 
 以下のコマンドで起動します。 

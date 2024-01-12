@@ -1,5 +1,5 @@
 # mypkg
-本パッケージは、千葉工業大学 未来ロボティクス学科 ロボットシステム学の講義内で作成した、Unix時間を日時変換するROS 2パッケージです。
+本パッケージは、千葉工業大学 未来ロボティクス学科 ロボットシステム学の講義内で作成した、Unix時間を１秒毎にパブリッシュ、サブスクライブ後、受信したUnix時間を日時に変換して端末に表示する、ROS 2パッケージです。
 
 ## テスト結果
 [![test](https://github.com/Yujiro-13/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/Yujiro-13/mypkg/actions/workflows/test.yml)
